@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About • Dr. Soumya Chatterjee</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              light: '#2563eb',  /* Blue */
+              dark: '#3b82f6',   /* Light Blue */
+            },
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-md sticky top-0 z-50 transition">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-extrabold text-blue-600 dark:text-blue-400 animate-slideIn">
+        Dr. Soumya Chatterjee
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="about.html" class="hover:text-brand-light dark:hover:text-brand-dark">About</a>
+        <a href="research.html" class="hover:text-brand-light dark:hover:text-brand-dark">Research</a>
+        <a href="publications.html" class="hover:text-brand-light dark:hover:text-brand-dark">Publications</a>
+        <a href="teaching.html" class="hover:text-brand-light dark:hover:text-brand-dark">Teaching</a>
+        <a href="awards.html" class="hover:text-brand-light dark:hover:text-brand-dark">Awards</a>
+        <a href="contact.html" class="hover:text-brand-light dark:hover:text-brand-dark">Contact</a>
+      </nav>
+
+      <!-- Right Controls -->
+      <div class="flex items-center gap-2">
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+          ☰
+        </button>
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+          🌙
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <!-- Mobile Nav -->
+      <nav id="mobile-menu" class="hidden flex-col space-y-3 px-6 pb-4 md:hidden text-base font-medium bg-white/90 dark:bg-gray-800/90 shadow-md">
+        <a href="about.html" class="block py-2 border-b border-gray-200 dark:border-gray-700 hover:text-brand-light dark:hover:text-brand-dark">About</a>
+        <a href="research.html" class="block py-2 border-b border-gray-200 dark:border-gray-700 hover:text-brand-light dark:hover:text-brand-dark">Research</a>
+        <a href="publications.html" class="block py-2 border-b border-gray-200 dark:border-gray-700 hover:text-brand-light dark:hover:text-brand-dark">Publications</a>
+        <a href="teaching.html" class="block py-2 border-b border-gray-200 dark:border-gray-700 hover:text-brand-light dark:hover:text-brand-dark">Teaching</a>
+        <a href="awards.html" class="block py-2 border-b border-gray-200 dark:border-gray-700 hover:text-brand-light dark:hover:text-brand-dark">Awards</a>
+        <a href="contact.html" class="block py-2 hover:text-brand-light dark:hover:text-brand-dark">Contact</a>
+      </nav>
+
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="relative py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 transition animate-fadeIn">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-12 items-center">
+      
+      <!-- Profile Image -->
+      <img src="Profile_Pic.jpg" alt="Faculty Photo" 
+           class="rounded-3xl shadow-2xl w-72 h-72 object-cover ring-4 ring-brand-light dark:ring-brand-dark hover:scale-105 transition duration-500">
+
+      <!-- About Text -->
+      <div>
+        <h1 class="text-5xl font-extrabold text-blue-600 dark:text-blue-400 mb-6 animate-slideIn">
+          Dr. Soumya Chatterjee
+        </h1>
+
+
+        <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 transition duration-300 hover:text-brand-light dark:hover:text-brand-dark hover:scale-105">
+          Assistant Professor<br>
+          Department of Electrical Engineering<br>
+          National Institute of Technology (NIT) Durgapur, India
+        </p>
+
+        <p class="text-gray-600 dark:text-gray-400 max-w-2xl transition duration-300 hover:text-brand-light dark:hover:text-brand-dark hover:scale-105">
+          I am an academic and researcher specializing in high voltage engineering, condition monitoring of power 
+          apparatus, dielectric materials, signal and image processing, and the application of artificial intelligence 
+          in power systems. My mission is to advance sustainable and reliable electrical energy systems through 
+          interdisciplinary research and innovation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Journey -->
+  <section class="py-20 animate-fadeIn">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="section-title text-center">Academic Journey</h2>
+      <div class="space-y-10 border-l-4 border-brand-light dark:border-brand-dark pl-6">
+
+        <!-- PhD -->
+        <div>
+          <h3 class="text-xl font-semibold">Doctor of Philosophy (Ph.D.) in Electrical Engineering</h3>
+          <p class="text-gray-600 dark:text-gray-400"><b>Jadavpur University, Kolkata (Apr 2016 – Sep 2019)</b></p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">GPA: 10/10, First Class</p>
+          <p class="mt-2 text-sm text-gray-700 dark:text-gray-300"><b>Thesis:</b> Studies on measurement time reduction techniques for insulation diagnostics in high voltage equipment.</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300"><b>Supervisors:</b> Prof. Sivaji Chakravorti and Prof. Biswendu Chatterjee</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Submitted: 14 Mar 2019 • Defence: 13 Sep 2019 • Awarded: 1 Oct 2019</p>
+        </div>
+
+        <!-- MSc -->
+        <div>
+          <h3 class="text-xl font-semibold">Master of Science (M.Sc.) in Electrical Power Engineering</h3>
+          <p class="text-gray-600 dark:text-gray-400"><b>Technische Universität Darmstadt, Germany (Oct 2011 – Jan 2014)</b></p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">GPA: 2.51 (Good)</p>
+          <p class="mt-2 text-sm text-gray-700 dark:text-gray-300"><b>Thesis:</b> Investigations on the influence of viscosity, conductivity and permittivity of water droplet on the partial discharge (PD) inception voltage of polymeric insulators in the presence of water droplets.</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300"><b>Supervisors:</b> Prof. Volker Hinrichsen and Dr. M.H. Nazemi</p>
+        </div>
+
+        <!-- BE -->
+        <div>
+          <h3 class="text-xl font-semibold">Bachelor of Engineering (B.E.) in Electrical Engineering</h3>
+          <p class="text-gray-600 dark:text-gray-400"><b>Jadavpur University, Kolkata (Jul 2005 – May 2009)</b></p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">GPA: 7.89/10, First Class</p>
+        </div>
+
+        <!-- Higher Secondary -->
+        <div>
+          <h3 class="text-xl font-semibold">Higher Secondary Examination (Science)</h3>
+          <p class="text-gray-600 dark:text-gray-400"><b>South Point High School, Kolkata (2005)</b></p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Marks: 916/1000 (91.6%), First Division</p>
+        </div>
+
+        <!-- Madhyamik -->
+        <div>
+          <h3 class="text-xl font-semibold">Madhyamik Examination</h3>
+          <p class="text-gray-600 dark:text-gray-400"><b>Nava Nalanda High School, Kolkata (2003)</b></p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Marks: 742/800 (92.75%), First Division</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">Subjects: General, Additional Mathematics</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-gray-600 dark:text-gray-400">
+    © 2025 Dr. Soumya Chatterjee • NIT Durgapur
+  </footer>
+
+  <!-- Animations -->
+  <style>
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateY(-20px) scale(0.95); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .animate-slideIn { animation: slideIn 1s ease-out forwards; }
+
+    .animate-fadeIn { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+
+    .flip-text {
+      display: inline-block;
+      animation: flip 4s infinite;
+      transform-style: preserve-3d;
+    }
+    @keyframes flip {
+      0%   { transform: rotateY(0deg); }
+      40%  { transform: rotateY(360deg); }
+      100% { transform: rotateY(360deg); }
+    }
+
+    .section-title {
+      font-size: 1.875rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #2563eb;
+    }
+    .dark .section-title { color: #3b82f6; }
+  </style>
+
+  <!-- Scripts -->
+  <script>
+    // Dark Mode
+    const themeToggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+    if(localStorage.getItem("theme") === "dark"){
+      html.classList.add("dark");
+      themeToggle.textContent = "☀️";
+    }
+    themeToggle.addEventListener("click", () => {
+      html.classList.toggle("dark");
+      if(html.classList.contains("dark")){
+        localStorage.setItem("theme","dark");
+        themeToggle.textContent = "☀️";
+      } else {
+        localStorage.setItem("theme","light");
+        themeToggle.textContent = "🌙";
+      }
+    });
+
+    // Mobile Menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
